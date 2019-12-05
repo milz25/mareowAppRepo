@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "297602817196",
+    "firebase_url": "https://mareow-ea075.firebaseio.com",
+    "project_id": "mareow-ea075",
+    "storage_bucket": "mareow-ea075.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297602817196:android:da0f35272cfaba58",
+        "android_client_info": {
+          "package_name": "com.mareow.recaptchademo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297602817196-083kfb74gro829ecvdcbpodeu6ngolm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recaptchademo",
+            "certificate_hash": "3beb2665104c77b97feaa305c77374bbafea01ba"
+          }
+        },
+        {
+          "client_id": "297602817196-uhkmtldjscth747ta00ma396lnskghnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB5OgoS5B7G-uszZaGnX4u5FoqFUI9ndI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297602817196-uhkmtldjscth747ta00ma396lnskghnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

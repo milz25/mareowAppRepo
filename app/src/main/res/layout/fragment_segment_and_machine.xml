@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentUserDetails.GovernmentIdFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/segment_details_frg_header">
+   <!-- <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/segment_details_frg_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/new_login" />-->
+    <LinearLayout
+        android:id="@+id/segment_details_frg_ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/Gray"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:src="@drawable/machine_details" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/segment_machine_details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            app:fontFamily="@font/colablig" />
+    </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment_details_frg_header"
+        android:layout_above="@+id/segment_machine_details_frg_footer">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/segment_details_frg_ln2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment_details_frg_ln1"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="Segment*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:fontFamily="@font/colabbol" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Segment"
+            android:padding="8dp"
+            android:background="@drawable/rect_bg_white_border_primary"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:id="@+id/segment_details_frg_spinner_segment"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/segment_details_frg_ln3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment_details_frg_ln2"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="Work Association*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:fontFamily="@font/colabbol" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:padding="8dp"
+            android:background="@drawable/rect_bg_white_border_primary"
+            android:text="Select Association"
+            android:id="@+id/segment_details_frg_spinner_work">
+        </androidx.appcompat.widget.AppCompatTextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/segment_details_frg_ln4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment_details_frg_ln3"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="Certification to Run Machine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/colabbol" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="No file selected"
+            android:layout_gravity="center"
+            android:id="@+id/segment_details_frg_no_file_selected_certificate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:fontFamily="@font/colablig"
+            android:layout_weight="0.8"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:src="@drawable/ic_photo_library"
+            android:background="@drawable/fab_shape"
+            android:id="@+id/segment_details_frg_certificate"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/segment_details_frg_ln5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segment_details_frg_ln4"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="Received work Credentials"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:fontFamily="@font/colabbol" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="No file selected"
+                android:layout_gravity="center"
+                android:id="@+id/segment_details_frg_no_file_selected_agency"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:fontFamily="@font/colablig"
+                android:layout_weight="0.8"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:padding="10dp"
+                android:src="@drawable/ic_photo_library"
+                android:background="@drawable/fab_shape"
+                android:id="@+id/segment_details_frg_agency"/>
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/segment_machine_details_frg_footer">
+      <!--  <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:id="@+id/segment_machine_details_frg_left"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_arrow_left"/>-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/segment_machine_details_frg_next"
+            android:src="@drawable/ic_save"
+            app:rippleColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            android:layout_centerHorizontal="true"
+            app:backgroundTint="@null"/>
+      <!--  <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:id="@+id/segment_machine_details_frg_right"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_arrow_right"/>-->
+    </RelativeLayout>
+</RelativeLayout>

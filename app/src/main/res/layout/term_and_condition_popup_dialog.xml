@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/dailog_ln"
+        android:layout_margin="16dp"
+        android:background="@drawable/rect_only_rounded_border"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RBD_popdialog_title"
+            android:text="Tilte"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rect_two_top_rounded"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_centerInParent="true"/>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RBD_popdialog_web_data">
+        </WebView>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/RBD_popdialog_close"
+        android:src="@drawable/ic_clear"
+        android:background="@drawable/circle_background"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="-15dp"
+        android:layout_alignRight="@+id/dailog_ln"
+        android:layout_alignTop="@+id/dailog_ln"/>
+</RelativeLayout>

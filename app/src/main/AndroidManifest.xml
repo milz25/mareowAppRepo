@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mareow.recaptchademo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:theme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.mareow.recaptchademo.Activities.SearchableActivity"
+            android:parentActivityName="com.mareow.recaptchademo.Activities.RenterMainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+
+        </activity>
+
+        <activity android:name="com.mareow.recaptchademo.Activities.OwnerMainActivity" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.RenterMachineDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name="com.mareow.recaptchademo.Activities.ContactsActivity" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.RenterMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+            <meta-data android:name="android.app.default_searchable" android:value=".Activities.SearchableActivity" />
+
+        </activity>
+
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.TermAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.DetailsSubmissionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mareow.recaptchademo.Activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+<service android:name=".FCMessaging.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIjkrODqYTYXhiR-BNTPthupsJDR9KMH0" />
+        <!--
+<service
+            android:enabled="true"
+            android:name="com.example.recaptchademo.FCMessaging.NotifyService" />
+        -->
+        <!--
+ <receiver
+            android:name="com.example.recaptchademo.FCMessaging.NotifyServiceReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+        </receiver>
+        -->
+
+        <service
+            android:name="com.mareow.recaptchademo.FCMessaging.MyJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name="com.mareow.recaptchademo.FCMessaging.DownloadService" />
+        <service android:name="com.mareow.recaptchademo.FCMessaging.DownloadInvoiceService" />
+        <service android:name="com.mareow.recaptchademo.FCMessaging.DownloadPaymentService" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ARO_AM_ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Associated Machine"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ARO_AM_ln1"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:descendantFocusability="beforeDescendants">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:id="@+id/ARO_AM_recycle"/>
+       <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Machinery will come with Operator"
+                    android:padding="5dp"
+                    android:id="@+id/ARO_OP_operator_included_checkbox"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+                <LinearLayout
+                    android:id="@+id/operator_charge_details_frg_ln2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:padding="5dp"
+                        android:text="@string/amount"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:hint="@string/amountoperator">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/ARO_OP_working_charges"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <RadioGroup
+                        android:id="@+id/operator_charge_amount_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/ARO_OP_fixed"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Fixed (Monthly)" />
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/ARO_OP_hourly"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hourly Basis" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accommodation (Client)"
+                    android:id="@+id/ARO_OP_accommodation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:button="@null"
+                    android:padding="5dp"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transportation (Client)"
+                    android:id="@+id/ARO_OP_transportation"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:button="@null"
+                    android:padding="5dp"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food (Client)"
+                    android:id="@+id/ARO_OP_food"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:button="@null"
+                    android:padding="5dp"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+            </LinearLayout>
+        </ScrollView>-->
+    </RelativeLayout>
+</RelativeLayout>

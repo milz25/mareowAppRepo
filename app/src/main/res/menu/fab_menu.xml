@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fab_agreement"
+        android:icon="@drawable/general_terms"
+        android:title="Agreement" />
+
+    <item
+        android:id="@+id/fab_extend"
+        android:icon="@drawable/wo_extend"
+        android:title="Extend" />
+    <item
+        android:id="@+id/fab_cancel"
+        android:icon="@drawable/wo_close_final"
+        android:title="Cancel" />
+</menu>

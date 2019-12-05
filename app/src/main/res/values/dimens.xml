@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="machine_image_height">160dp</dimen>
+    <dimen name="able_to_run_machine_width">300dp</dimen>
+    <dimen name="icon_mask">80dp</dimen>
+    <dimen name="icon">75dp</dimen>
+    <dimen name="icon_mask_header">50dp</dimen>
+    <dimen name="icon_header">47dp</dimen>
+    <dimen name="margin_left">16dp</dimen>
+    <dimen name="margin_right">16dp</dimen>
+    <dimen name="margin_top">8dp</dimen>
+    <dimen name="margin_bottom">8dp</dimen>
+    <dimen name="text1">16sp</dimen>
+    <dimen name="text2">8sp</dimen>
+    <dimen name="machine_details_image_height">180dp</dimen>
+    <dimen name="associted_operator_icon_mask">85dp</dimen>
+    <dimen name="associted_operator_icon">75dp</dimen>
+    <dimen name="logo_height">90dp</dimen>
+    <dimen name="profile_text_size">16sp</dimen>
+    <dimen name="category_adapter_image_size">120dp</dimen>
+    <dimen name="similar_machine_adapter_width">160dp</dimen>
+    <dimen name="recycle_height_attachment">250dp</dimen>
+
+
+</resources>

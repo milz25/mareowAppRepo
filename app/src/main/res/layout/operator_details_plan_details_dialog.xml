@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Machinery will come with Operator"
+        android:textColor="@android:color/black"
+        android:id="@+id/rental_plan_dialog_oprator_check"
+        android:textSize="16sp"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_top"
+        android:layout_marginRight="@dimen/margin_top"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rental_plan_dialog_fixed_amount_heading"
+            android:layout_weight="0.6"
+            android:paddingLeft="5dp"
+            android:text="Amount (Fixed)"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rental_plan_dialog_fixed_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Plan type"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accommodation (client)"
+        android:textColor="@android:color/black"
+        android:id="@+id/rental_plan_dialog_accomodation"
+        android:textSize="16sp"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transportation (client)"
+        android:textColor="@android:color/black"
+        android:id="@+id/rental_plan_dialog_transportation"
+        android:textSize="16sp"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food (client)"
+        android:textColor="@android:color/black"
+        android:id="@+id/rental_plan_dialog_food"
+        android:textSize="16sp"
+        android:button="@null"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+
+
+</LinearLayout>

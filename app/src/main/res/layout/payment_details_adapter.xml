@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+     android:layout_marginRight="@dimen/margin_right"
+     android:layout_marginLeft="@dimen/margin_left"
+     android:layout_marginTop="@dimen/margin_top"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:focusableInTouchMode="true"
+            android:hint="Invoice #"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/payment_details_adapter_invoice_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/payment_details_adapter_invoice_download"
+                android:background="@android:color/transparent"
+                android:src="@drawable/invoice_generated" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/payment_details_adapter_invoice_bank_details"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bank_final" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/payment_details_adapter_invoice_more"
+                android:background="@android:color/transparent"
+                android:src="@drawable/more_final" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="Category"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/payment_details_adapter_invoice_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:focusableInTouchMode="true"
+            android:hint="Payable Amount"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/payment_details_adapter_invoice_payable_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:focusableInTouchMode="true"
+            android:hint="Due Amount"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/payment_details_adapter_invoice_due_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment_details_adapter_recycle"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/nav_dashboard"/>
+        <item
+            android:id="@+id/nav_machine_model"
+            android:icon="@drawable/machine_details"
+            android:title="@string/nav_machine"/>
+        <item
+            android:id="@+id/nav_rental_plan"
+            android:icon="@drawable/work_order"
+            android:title="@string/nav_rental_plan" />
+        <item
+            android:id="@+id/nav_operator"
+            android:icon="@drawable/ic_operator"
+            android:title="@string/nav_operator" />
+        <item
+            android:id="@+id/nav_term_and_condition"
+            android:icon="@drawable/tell_us_about_yourself"
+            android:title="@string/nav_TandD" />
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/ic_local_offer"
+            android:title="@string/nav_offer"/>
+        <item
+            android:id="@+id/nav_work_order"
+            android:icon="@drawable/work_order"
+            android:title="@string/nav_work_order" />
+        <item
+            android:id="@+id/nav_invoice"
+            android:icon="@drawable/invoice"
+            android:title="@string/nav_invoice" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/payment"
+            android:title="@string/nav_payment" />
+    </group>
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+     <!--   <item
+            android:id="@+id/nav_myprofile"
+            android:icon="@drawable/myprofile"
+            android:title="@string/nav_myprofile" />-->
+        <item
+            android:id="@+id/nav_invite_other"
+            android:icon="@drawable/invite_other"
+            android:title="@string/nav_invite_other" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password"
+            android:title="@string/nav_change_password" />
+        <item
+            android:id="@+id/nav_account_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_account_setting" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/nav_logout" />
+    </group>
+
+
+
+</menu>

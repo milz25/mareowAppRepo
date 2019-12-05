@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/machine_attachments_adapter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Machine Attachment"
+        android:button="@null"
+        android:padding="5dp"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+</LinearLayout>

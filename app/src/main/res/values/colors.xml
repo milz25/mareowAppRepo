@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003663</color>
+    <color name="colorPrimaryDark">#002060</color>
+    <color name="colorAccent">#003663</color>
+
+    <color name="Gray">#F7F7F7</color>
+    <color name="text_blue">#287BFF</color>
+    <color name="light_gray">#BBBBBB</color>
+
+    <color name="Category_Blue">#0089CF</color>
+    <color name="Category_Platinum">#CECECE</color>
+    <color name="Category_Gold">#A67C00</color>
+    <color name="Category_Silver">#BBC2C2</color>
+    <color name="Category_Diamond">#47C4DC</color>
+    <color name="theme_orange">#FAA519</color>
+    <color name="primary_white">#B3003663</color>
+    <color name="Blue_Text">#0095D9</color>
+    <color name="diable_orange">#B3FAA519</color>
+    <color name="dark_gray">#80222222</color>
+
+    <color name="pressed_color">#B3FAA519</color>
+    <color name="default_color">#ffffff</color>
+
+</resources>

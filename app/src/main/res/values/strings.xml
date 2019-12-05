@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">mareow</string>
+    <string name="welcome">Welcome to mareow</string>
+    <string name="remeber_me">Remember Me</string>
+    <string name="signup">New to mareow? SignUp !</string>
+    <string name="dont_account">Don\'t have an account?</string>
+    <string name="termandcondition"><![CDATA[By Continuing you accept the Term & Conditions and Privacy Policy]]></string>
+    <string name="forgot"><b>Help,I forgot login details</b></string>
+    <string name="robot">I\'m not a robot</string>
+    <string name="title_role">Select Role</string>
+
+
+    <string-array name="role_array">
+        <item>Owner</item>
+        <item>Renter</item>
+        <item>Operator</item>
+        <item>Supervisor</item>
+        <item>Manufacturer</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="segment_machine_details"><![CDATA[Segment & Machine Details]]></string>
+    <string name="nav_myprofile">My Profile</string>
+    <string name="nav_invite_other">Invite Other</string>
+    <string name="nav_change_password">Change Password</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_work_order">Work Order</string>
+    <string name="nav_machine_model">Machine Model</string>
+    <string name="nav_payment">Payment</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="nav_dashboard">DashBoard</string>
+    <string name="role">(Role)</string>
+    <string name="nav_bookmark">Bookmark</string>
+    <string name="nav_machine">Machine</string>
+    <string name="nav_TandD"><![CDATA[T & C]]></string>
+    <string name="nav_invoice">Invoice</string>
+    <string name="nav_rental_plan">Rental Plan</string>
+    <string name="WorkOrder">Work Order# 26845645511/1000 (Work Order)</string>
+    <string name="addmachine">Machine Model Details</string>
+    <string name="action_message">Message</string>
+    <string name="fcm_message">mareow</string>
+    <string name="nav_account_setting">Account Settings</string>
+    <string name="default_notification_channel_id">mareow_channel</string>
+    <string name="action_notification">Notification</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="machine_search">Search</string>
+    <string name="able_to_run_machine">Able To Run Machine</string>
+    <string name="work_order_200457877_100000">Work Order # 200457877/100000</string>
+    <string name="how_is_commitment_towards_to_work_completion_support">How is commitment towards to work completion support?</string>
+    <string name="amount">Working Charges</string>
+    <string name="logintext">fhdhfhf dfhhfdds dhfdsf sd dshfkjdsfhsdf hdgsdbfdghf sdfg udfbjdsfgds bdf bkdbjfkh</string>
+    <string name="amountoperator">Amount (&#x20B9;)</string>
+    <string name="ownerQ1">How is commitment towards to work completion support?</string>
+    <string name="ownerQ2">How is a response, when asked for support?</string>
+    <string name="ownerQ3">How efficient given solution by POC?</string>
+    <string name="ownerQ4">How quick have you got a response from POC?</string>
+    <string name="machineQ1">How is the machine working condition? Is it same as explaining on the portal?</string>
+    <string name="machineQ2">Is machine/equipment fuel efficient?</string>
+    <string name="machineQ3">Is machine/equipment working as expected and efficient?</string>
+    <string name="machineQ4">Machine is maintained in good working condition?</string>
+    <string name="renter_machine">Which kind of machine are you looking for...</string>
+    <string name="inviteotherString">Invite To * \n(use commas[,] to separate email ID)</string>
+    <string name="nav_machine_owner">Machine</string>
+    <string name="nav_operator">Operator</string>
+
+
+    <string-array name="gov_id_array">
+        <item>Passport</item>
+        <item>Aadhar</item>
+        <item>Driving Licence</item>
+        <item>PAN No</item>
+        <item>Voter ID</item>
+    </string-array>
+    <string-array name="refer_type_array">
+        <item>mareow User Refferd</item>
+        <item>Others</item>
+        <item>Advertisment</item>
+        <item>Marketing Team</item>
+        <item>Sales Team</item>
+    </string-array>
+    <string-array name="segment_type_array">
+        <item>Container</item>
+        <item>Others</item>
+        <item>Advertisment</item>
+        <item>Marketing Team</item>
+        <item>Sales Team</item>
+    </string-array>
+    <string-array name="work_type_array">
+        <item>Independent</item>
+        <item>Associated</item>
+        <item>Both</item>
+    </string-array>
+    <string-array name="status_array">
+        <item>All</item>
+        <item>Work Order</item>
+        <item>Close(Work Order)</item>
+        <item>Offer Generate</item>
+        <item>Accept Offer(Owner)</item>
+        <item>Accept Offer(Renter)</item>
+        <item>Reject(WOrk Offer)</item>
+    </string-array>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Dashboard</item>
+        <item>Work Order</item>
+        <item>Machine Model</item>
+        <item>Payment</item>
+        <item>Rental Plan</item>
+        <item>Term and Condition</item>
+        <item>Invoice</item>
+        <item>My Profile</item>
+        <item>Invite To Join mareow</item>
+        <item>Change Password</item>
+        <item>Account Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="work_status_type_array">
+        <item>All</item>
+        <item>Work Order</item>
+        <item>Close (Work Order)</item>
+        <item>Offer Generate</item>
+        <item>Accept Offer (Owner)</item>
+        <item>Accept Offer (Renter)</item>
+        <item>Reject (Work Offer)</item>
+    </string-array>
+
+
+    <string name="google_map_api_key">AIzaSyCIjkrODqYTYXhiR-BNTPthupsJDR9KMH0</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_offer">Offer</string>
+    <string name="mareowservice">\"mareow\" Service Charge</string>
+    <string name="associated_with">Associated With \"mareow\" Since</string>
+    <string name="showall">&lt;u>ShowAll&lt;/u></string>
+
+    <string-array name="nav_item_activity_renter_titles">
+        <item>Home</item>
+        <item>Dashboard</item>
+        <item>BookMark</item>
+        <item>Offer</item>
+        <item>Work Order</item>
+        <item>Payment</item>
+        <item>My Profile</item>
+        <item>Invite To Join mareow</item>
+        <item>Change Password</item>
+        <item>Account Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <string-array name="nav_item_activity_owner_titles">
+        <item>Dashboard</item>
+        <item>Machine</item>
+        <item>Rental Plan</item>
+        <item>Operator</item>
+        <item>Term &amp; Condition</item>
+        <item>Offer</item>
+        <item>Work Order</item>
+        <item>Invoice</item>
+        <item>Payment</item>
+        <item>Invite To Join mareow</item>
+        <item>Change Password</item>
+        <item>Account Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="server">https://testbud.in/ultracare/google-recaptcha-verfication.php</string>
+    <string name="app_label">mareow</string>
+    <string name="search_hint">Machine #</string>
+    <string name="associate_owner">Associate Owner</string>
+    <string name="esign_heading_text">Please read the following statement carefully, then acknowledge that you have read and approved it by providing the information requested at the bottom of the page. Please note that an eSignature is the electronic equivalent of a hand-written signature.</string>
+    <string name="esign_bottom_text">By my eSignature below. I certify that I have read, full understand and accept all terms of the foregoing statement. Please signify your acceptance by entering the information requested in the field below.</string>
+
+
+</resources>

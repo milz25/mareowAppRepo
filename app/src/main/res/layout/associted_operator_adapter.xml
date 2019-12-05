@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/owner_APA_cardView"
+    android:layout_marginLeft="@dimen/margin_top"
+    android:layout_marginRight="@dimen/margin_top"
+    android:layout_marginBottom="@dimen/margin_top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+        <LinearLayout
+            android:background="@drawable/associate_operator_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+            <!--<androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/profile"/>-->
+            <RelativeLayout
+                android:id="@+id/icon_layout"
+                android:layout_width="@dimen/associted_operator_icon_mask"
+                android:layout_height="@dimen/associted_operator_icon_mask"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/owner_APA_icon"
+                    android:layout_width="@dimen/associted_operator_icon"
+                    android:layout_height="@dimen/associted_operator_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/profile"
+                    android:scaleType="fitXY" >
+                </androidx.appcompat.widget.AppCompatImageView>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/owner_APA_icon_mask"
+                    android:layout_width="@dimen/associted_operator_icon_mask"
+                    android:layout_height="@dimen/associted_operator_icon_mask"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/category_bule"
+                    android:scaleType="fitXY" >
+                </androidx.appcompat.widget.AppCompatImageView>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/owner_APA_user_verified"
+                    android:layout_alignBottom="@+id/owner_APA_icon_mask"
+                    android:layout_alignRight="@+id/owner_APA_icon_mask"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sajid Shaikh"
+                android:id="@+id/owner_APA_operator_name"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner_APA_operator_association"
+                android:text="Associated since october 2019"
+                android:textColor="@color/theme_orange"
+                android:textStyle="bold"
+               android:textSize="14sp"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/owner_APA_workOrder"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/wo_open_final"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Work Order"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/theme_orange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/owner_APA_deassociation"
+                    android:layout_height="match_parent">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/association_final"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deassociation"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:hint="About My Self">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/owner_APA_about_myself"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:hint="Ability to run machine">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/owner_APA_ability_to_run"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:hint="Rate (Per Hr.)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/owner_APA_rate"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/owner_APA_accomodation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accomodation (Client)"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/owner_APA_trnsportation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transportation (Client)"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/owner_APA_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food (Client)"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

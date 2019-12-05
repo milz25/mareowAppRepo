@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/payment_dailog_heading_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="sasgaggdsagd"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:layout_weight="0.4"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/payment_dailog_value_text"
+        android:layout_width="0dp"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_profile_edit"
+        android:layout_marginTop="38dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="@dimen/icon_mask_header"
+            android:layout_height="@dimen/icon_mask_header"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_header"
+                android:layout_width="@dimen/icon_header"
+                android:layout_height="@dimen/icon_header"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profile"
+                android:scaleType="fitXY" >
+            </androidx.appcompat.widget.AppCompatImageView>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_mask_header"
+                android:layout_width="@dimen/icon_mask_header"
+                android:layout_height="@dimen/icon_mask_header"
+                android:layout_centerInParent="true"
+                android:background="@drawable/category_bule"
+                android:scaleType="fitXY" >
+            </androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+
+   <!-- <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/drawer_header_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/profile" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/drawer_header_image"
+        android:layout_marginLeft="16dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawer_header_username"
+            android:text="Fullname"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:fontFamily="@font/colabmed"
+            android:textColor="@android:color/white"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawer_header_role"
+            android:text="@string/role"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:fontFamily="@font/colabthi"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_right_profile"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
